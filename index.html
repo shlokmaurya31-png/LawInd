@@ -1,0 +1,145 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>LawInd — Legal Intelligence for India</title><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"><style>*{margin:0;padding:0;box-sizing:border-box}:root{--bg:#FAFAF8;--bg2:#F3F1EC;--ink:#0A0907;--ink2:#2C2A25;--ink3:#5C5849;--gold:#8B6914;--gold2:#A07820;--gold3:#6B5210;--line:rgba(139,105,20,0.15)}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--ink);font-family:Georgia,serif;overflow-x:hidden}a{text-decoration:none;color:inherit}
+nav{display:flex;align-items:center;justify-content:space-between;padding:1.25rem 4rem;background:rgba(250,250,248,0.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+.logo{font-family:'Playfair Display',Georgia,serif;font-size:1.4rem;font-weight:400;color:var(--ink);letter-spacing:0.01em}
+.nav-links{display:flex;gap:2.5rem}.nav-links a{font-size:13px;letter-spacing:0.06em;color:var(--ink3);font-family:system-ui,sans-serif;text-transform:uppercase;transition:color 0.2s}.nav-links a:hover{color:var(--ink)}
+.btn-outline{background:transparent;border:1px solid var(--gold2);color:var(--gold3);font-size:12px;letter-spacing:0.12em;text-transform:uppercase;padding:0.5rem 1.4rem;font-family:system-ui,sans-serif;cursor:pointer;transition:all 0.25s}.btn-outline:hover{background:var(--gold2);color:#fff}
+.hero{min-height:90vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:6rem 4rem;text-align:center;background:var(--bg)}
+.hero-rule{width:1px;height:60px;background:linear-gradient(to bottom,transparent,var(--gold2));margin:0 auto 2.5rem}
+.eyebrow{font-size:11px;letter-spacing:0.3em;color:var(--gold2);text-transform:uppercase;font-family:system-ui,sans-serif;margin-bottom:2rem}
+.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(3.2rem,6vw,5.5rem);font-weight:400;line-height:1.08;color:var(--ink);margin-bottom:0.4em}.hero h1 em{font-style:italic;color:var(--gold2)}
+.tagline{font-size:1.05rem;color:var(--ink3);max-width:500px;margin:1.8rem auto 3rem;line-height:1.75;font-family:system-ui,sans-serif}
+.cta{display:flex;gap:1.25rem;justify-content:center}
+.btn-primary{background:var(--gold2);color:#fff;font-size:12px;letter-spacing:0.15em;text-transform:uppercase;padding:0.85rem 2.4rem;font-family:system-ui,sans-serif;cursor:pointer;border:none;font-weight:500;transition:all 0.25s}.btn-primary:hover{background:var(--gold3)}
+.btn-ghost{background:transparent;color:var(--ink3);font-size:12px;letter-spacing:0.15em;text-transform:uppercase;padding:0.85rem 2rem;font-family:system-ui,sans-serif;cursor:pointer;border:1px solid rgba(0,0,0,0.15);transition:all 0.25s}.btn-ghost:hover{border-color:var(--ink);color:var(--ink)}
+.firms{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1.6rem 0;overflow:hidden;background:var(--bg2)}
+.scroll{display:flex;gap:4rem;animation:crawl 35s linear infinite;width:max-content;align-items:center}@keyframes crawl{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.firm{font-size:11px;letter-spacing:0.2em;color:rgba(0,0,0,0.3);text-transform:uppercase;font-family:system-ui,sans-serif;white-space:nowrap}.dot{width:3px;height:3px;background:var(--gold2);opacity:0.5;border-radius:50%;flex-shrink:0}
+.s{padding:6rem 4rem;max-width:1080px;margin:0 auto}
+.ey{font-size:10px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold2);font-family:system-ui,sans-serif;margin-bottom:1.4rem}
+.st{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:400;line-height:1.2;color:var(--ink);margin-bottom:1rem}.st em{font-style:italic;color:var(--gold2)}
+.ss{font-size:15px;color:var(--ink3);line-height:1.8;max-width:480px;font-family:system-ui,sans-serif}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;margin-top:4rem;border:1px solid var(--line)}
+.fi{padding:2.5rem;border-bottom:1px solid var(--line);border-right:1px solid var(--line);transition:background 0.3s}.fi:hover{background:var(--bg2)}.fi:nth-child(2n){border-right:none}.fi:nth-last-child(-n+2){border-bottom:none}
+.fn{font-size:10px;letter-spacing:0.3em;color:rgba(139,105,20,0.5);font-family:system-ui,sans-serif;margin-bottom:1.2rem;text-transform:uppercase}
+.fi h3{font-family:'Playfair Display',Georgia,serif;font-size:1.2rem;font-weight:400;color:var(--ink);margin-bottom:0.6rem}.fi p{font-size:14px;color:var(--ink3);line-height:1.7;font-family:system-ui,sans-serif}
+.band{background:var(--ink);border-top:1px solid rgba(139,105,20,0.15);border-bottom:1px solid rgba(139,105,20,0.15)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);max-width:1080px;margin:0 auto}
+.stat{padding:3.5rem 2rem;text-align:center;border-right:1px solid rgba(255,255,255,0.07)}.stat:last-child{border-right:none}
+.sn{font-family:'Playfair Display',Georgia,serif;font-size:3.2rem;font-weight:400;color:#D4AA1A;line-height:1;display:block;margin-bottom:0.5rem}
+.sl{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.35);font-family:system-ui,sans-serif}
+.tgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem;margin-top:4rem}
+.tc{border:1px solid var(--line);padding:2.2rem;background:var(--bg);transition:border-color 0.3s}.tc:hover{border-color:rgba(139,105,20,0.35)}
+.tm{font-family:'Playfair Display',Georgia,serif;font-size:2.5rem;color:rgba(139,105,20,0.25);line-height:1;margin-bottom:1rem}
+.tc q{font-size:14.5px;color:var(--ink2);line-height:1.75;display:block;font-family:'Playfair Display',Georgia,serif;font-style:italic;margin-bottom:1.8rem;quotes:none}
+.tl{width:24px;height:1px;background:var(--gold2);opacity:0.5;margin-bottom:1rem}
+.tn{font-size:13px;font-weight:500;color:var(--ink);font-family:system-ui,sans-serif}.tr{font-size:12px;color:var(--ink3);font-family:system-ui,sans-serif;margin-top:2px}
+.two{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);margin-top:4rem}
+.cb2{padding:3rem}.cb2+.cb2{border-left:1px solid var(--line)}
+.cb2 h3{font-family:'Playfair Display',Georgia,serif;font-size:1.4rem;font-weight:400;color:var(--ink);margin-bottom:0.8rem}
+.cb2 p{font-size:14px;color:var(--ink3);line-height:1.75;font-family:system-ui,sans-serif;margin-bottom:1.8rem}
+.tags{display:flex;flex-wrap:wrap;gap:0.5rem}.tag{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold2);border:1px solid rgba(139,105,20,0.25);padding:0.3rem 0.75rem;font-family:system-ui,sans-serif}
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin-top:4rem}
+.sc{background:var(--bg);padding:2rem 1.5rem;transition:background 0.25s}.sc:hover{background:var(--bg2)}
+.sc h4{font-size:13px;font-weight:500;color:var(--ink);font-family:system-ui,sans-serif;margin-bottom:0.3rem;letter-spacing:0.03em}
+.sc p{font-size:12px;color:var(--ink3);font-family:system-ui,sans-serif;line-height:1.5}
+.scicon{font-size:18px;color:var(--gold2);margin-bottom:0.8rem;font-family:system-ui,sans-serif}
+.ctab{text-align:center;padding:8rem 4rem;background:var(--bg2);border-top:1px solid var(--line)}
+.orn{font-family:'Playfair Display',Georgia,serif;font-size:6rem;color:rgba(139,105,20,0.08);line-height:1;margin-bottom:-1rem;user-select:none}
+.ctab h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.2rem,4vw,3.5rem);font-weight:400;color:var(--ink);margin-bottom:1rem}.ctab h2 em{font-style:italic;color:var(--gold2)}
+.ctab p{font-size:15px;color:var(--ink3);margin-bottom:3rem;font-family:system-ui,sans-serif}
+.ctabtns{display:flex;justify-content:center;gap:1rem}
+footer{background:var(--ink);padding:4rem 4rem 2rem;border-top:1px solid rgba(139,105,20,0.15)}
+.fi2{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem}
+.fd{font-size:13px;color:rgba(255,255,255,0.3);line-height:1.7;font-family:system-ui,sans-serif;margin-top:1rem;max-width:220px}
+.fc h5{font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:rgba(255,255,255,0.25);font-family:system-ui,sans-serif;margin-bottom:1.2rem}
+.fc a{display:block;font-size:13px;color:rgba(255,255,255,0.35);font-family:system-ui,sans-serif;margin-bottom:0.6rem;text-decoration:none;transition:color 0.2s}.fc a:hover{color:rgba(255,255,255,0.7)}
+.fbot{max-width:1080px;margin:3rem auto 0;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.07);display:flex;justify-content:space-between}
+.fbot span{font-size:11px;color:rgba(255,255,255,0.18);font-family:system-ui,sans-serif}
+.find{font-size:11px;color:rgba(184,146,15,0.6);font-family:system-ui,sans-serif;letter-spacing:0.1em;text-transform:uppercase}
+@media(max-width:768px){nav{padding:1rem 1.5rem}.nav-links{display:none}.s{padding:4rem 1.5rem}.fgrid,.tgrid,.two{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.sgrid{grid-template-columns:1fr 1fr}.fi2{grid-template-columns:1fr 1fr}.ctab,.hero{padding:4rem 1.5rem}}
+</style></head><body>
+<nav>
+  <span class="logo">LawInd</span>
+  <div class="nav-links"><a href="#platform">Platform</a><a href="#solutions">Solutions</a><a href="#security">Security</a><a href="#company">Company</a></div>
+  <button class="btn-outline">Request access</button>
+</nav>
+
+<section class="hero">
+  <div class="hero-rule"></div>
+  <p class="eyebrow">India's legal intelligence platform</p>
+  <h1>The AI that thinks<br>like a <em>silk</em></h1>
+  <p class="tagline">India's most sophisticated legal teams use LawInd to research faster, draft smarter, and deliver counsel that moves at the speed of business.</p>
+  <div class="cta"><button class="btn-primary">Request access</button><a class="btn-ghost" href="#platform">See the platform</a></div>
+</section>
+
+<div class="firms"><div class="scroll">
+  <span class="firm">Trilegal</span><span class="dot"></span><span class="firm">AZB &amp; Partners</span><span class="dot"></span><span class="firm">Cyril Amarchand Mangaldas</span><span class="dot"></span><span class="firm">Khaitan &amp; Co</span><span class="dot"></span><span class="firm">JSA Advocates</span><span class="dot"></span><span class="firm">Shardul Amarchand</span><span class="dot"></span><span class="firm">Nishith Desai</span><span class="dot"></span><span class="firm">DSK Legal</span><span class="dot"></span><span class="firm">Luthra &amp; Luthra</span><span class="dot"></span><span class="firm">S&amp;R Associates</span><span class="dot"></span>
+  <span class="firm">Trilegal</span><span class="dot"></span><span class="firm">AZB &amp; Partners</span><span class="dot"></span><span class="firm">Cyril Amarchand Mangaldas</span><span class="dot"></span><span class="firm">Khaitan &amp; Co</span><span class="dot"></span><span class="firm">JSA Advocates</span><span class="dot"></span><span class="firm">Shardul Amarchand</span><span class="dot"></span><span class="firm">Nishith Desai</span><span class="dot"></span><span class="firm">DSK Legal</span><span class="dot"></span><span class="firm">Luthra &amp; Luthra</span><span class="dot"></span><span class="firm">S&amp;R Associates</span><span class="dot"></span>
+</div></div>
+
+<section id="platform"><div class="s">
+  <p class="ey">The platform</p>
+  <h2 class="st">Built on the depth<br>of <em>Indian law</em></h2>
+  <p class="ss">Trained on Indian statutes, Supreme Court and High Court judgments, regulatory circulars, and decades of precedent.</p>
+  <div class="fgrid">
+    <div class="fi"><div class="fn">01</div><h3>Legal Research</h3><p>Instant, cited answers across IPC, CPC, Companies Act, SEBI regulations, and the full corpus of Indian case law.</p></div>
+    <div class="fi"><div class="fn">02</div><h3>Contract Intelligence</h3><p>Review, redline, and benchmark contracts in minutes. Extract obligations and surface risks automatically.</p></div>
+    <div class="fi"><div class="fn">03</div><h3>Due Diligence</h3><p>Compress weeks of diligence into days. Bulk-analyze data rooms and produce deal-ready reports.</p></div>
+    <div class="fi"><div class="fn">04</div><h3>Workflow Agents</h3><p>End-to-end automation for the work that consumes your associates. Build once, run at scale.</p></div>
+    <div class="fi"><div class="fn">05</div><h3>Litigation Intelligence</h3><p>Build airtight arguments from precedent. Surface conflicting judgments and draft submissions faster.</p></div>
+    <div class="fi"><div class="fn">06</div><h3>Document Vault</h3><p>Store, organize, and interrogate your firm's institutional knowledge. Every past matter becomes a live resource.</p></div>
+  </div>
+</div></section>
+
+<div class="band"><div class="stats">
+  <div class="stat"><span class="sn">18+</span><span class="sl">Hours saved per lawyer monthly</span></div>
+  <div class="stat"><span class="sn">60%</span><span class="sl">Faster contract review</span></div>
+  <div class="stat"><span class="sn">500+</span><span class="sl">Legal professionals</span></div>
+  <div class="stat"><span class="sn">25+</span><span class="sl">Leading Indian firms</span></div>
+</div></div>
+
+<section><div class="s">
+  <p class="ey">Clients</p>
+  <h2 class="st">What the best firms<br>are <em>saying</em></h2>
+  <div class="tgrid">
+    <div class="tc"><div class="tm">&ldquo;</div><q>LawInd has transformed how our associates approach research. What used to take half a day now takes under an hour — with better accuracy and full citations.</q><div class="tl"></div><div class="tn">Rahul Krishnan</div><div class="tr">Managing Partner, Trilegal</div></div>
+    <div class="tc"><div class="tm">&ldquo;</div><q>For in-house teams operating at the pace business demands, LawInd is indispensable. We respond in hours now, not days.</q><div class="tl"></div><div class="tn">Priya Sharma</div><div class="tr">General Counsel, Infosys BPM</div></div>
+    <div class="tc"><div class="tm">&ldquo;</div><q>Diligence quality has gone up while turnaround has halved. It's the most significant shift in practice I've seen.</q><div class="tl"></div><div class="tn">Ananya Venkat</div><div class="tr">Partner, AZB &amp; Partners</div></div>
+  </div>
+</div></section>
+
+<section id="solutions"><div class="s" style="padding-top:0">
+  <p class="ey">Who it's for</p>
+  <h2 class="st">Every corner of <em>practice</em></h2>
+  <div class="two">
+    <div class="cb2"><h3>Law firms</h3><p>From Tier-1 full-service firms to specialized boutiques. Scale the expertise of your best partners across every matter.</p><div class="tags"><span class="tag">M&amp;A</span><span class="tag">Private Equity</span><span class="tag">Litigation</span><span class="tag">Banking</span><span class="tag">Tax</span><span class="tag">IP</span><span class="tag">Competition</span></div></div>
+    <div class="cb2"><h3>In-house teams</h3><p>Lean legal teams trusted to move as fast as the business. LawInd lets you punch above your weight without burning out your people.</p><div class="tags"><span class="tag">Contracts</span><span class="tag">Compliance</span><span class="tag">Regulatory</span><span class="tag">Employment</span><span class="tag">Real Estate</span></div></div>
+  </div>
+</div></section>
+
+<section id="security"><div class="s" style="padding-top:0">
+  <p class="ey">Security</p>
+  <h2 class="st">Your clients' secrets<br>stay <em>secret</em></h2>
+  <p class="ss">India data residency, zero training on your data, and enterprise controls your GC can sign off on.</p>
+  <div class="sgrid">
+    <div class="sc"><div class="scicon">&#9679;</div><h4>SOC 2 Type II</h4><p>Audited annually by independent third parties</p></div>
+    <div class="sc"><div class="scicon">&#9679;</div><h4>ISO 27001</h4><p>Certified information security management</p></div>
+    <div class="sc"><div class="scicon">&#9679;</div><h4>India data residency</h4><p>DPDP Act compliant — your data never leaves India</p></div>
+    <div class="sc"><div class="scicon">&#9679;</div><h4>Zero data training</h4><p>Your matters never train the model. Ever.</p></div>
+  </div>
+</div></section>
+
+<div class="ctab">
+  <div class="orn">&sect;</div>
+  <h2>The standard of practice<br>is <em>rising</em></h2>
+  <p>Join the firms already working at the frontier of Indian legal practice.</p>
+  <div class="ctabtns"><button class="btn-primary">Request access</button><a class="btn-ghost" href="mailto:hello@lawind.in">Contact sales</a></div>
+</div>
+
+<footer id="company"><div class="fi2">
+  <div><span class="logo" style="color:#FAF8F4">LawInd</span><p class="fd">Legal intelligence built for Indian law firms and in-house teams. Precise. Confidential. Purpose-built for India.</p></div>
+  <div class="fc"><h5>Platform</h5><a href="#">Research</a><a href="#">Contracts</a><a href="#">Due diligence</a><a href="#">Agents</a></div>
+  <div class="fc"><h5>Solutions</h5><a href="#">Law firms</a><a href="#">In-house</a><a href="#">Litigation</a></div>
+  <div class="fc"><h5>Company</h5><a href="#">About</a><a href="#">Security</a><a href="#">Careers</a><a href="#">Privacy</a></div>
+</div><div class="fbot"><span>&copy; 2026 LawInd. All rights reserved.</span><span class="find">Built in India &mdash; for India</span></div></footer>
+</body></html>
