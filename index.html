@@ -70,7 +70,21 @@ footer{background:var(--ink);padding:4rem 4rem 2rem}
   <a href="/" class="logo" style="text-decoration:none;color:inherit">LawInd</a>
   <div class="nav-links"><a href="#platform">Platform</a><a href="#segments">Who it's for</a><a href="#pricing">Pricing</a><a href="#security">Security</a><a href="/roi">ROI Calculator</a><a href="/blog">Blog</a><a href="/resources">Resources</a></div>
   <button class="btn-outline" onclick="window.location.href='#contact'">Request access</button>
+
+<button id="ham-btn" onclick="var m=document.getElementById('mob-nav');m.style.display=m.style.display==='block'?'none':'block'" style="display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;margin-left:8px">
+<span style="display:block;width:22px;height:2px;background:#5C5849"></span>
+<span style="display:block;width:22px;height:2px;background:#5C5849"></span>
+<span style="display:block;width:22px;height:2px;background:#5C5849"></span>
+</button>
 </nav>
+<div id="mob-nav" style="display:none;position:fixed;top:62px;left:0;right:0;background:#FAF8F4;border-bottom:1px solid rgba(139,105,20,0.2);z-index:9999;padding:0 1.5rem">
+<a href="/#platform" onclick="document.getElementById('mob-nav').style.display='none'" style="display:block;padding:1rem 0;font-size:15px;color:#5C5849;font-family:system-ui,sans-serif;border-bottom:1px solid rgba(139,105,20,0.1);text-decoration:none">Platform</a>
+<a href="/#segments" onclick="document.getElementById('mob-nav').style.display='none'" style="display:block;padding:1rem 0;font-size:15px;color:#5C5849;font-family:system-ui,sans-serif;border-bottom:1px solid rgba(139,105,20,0.1);text-decoration:none">Who it's for</a>
+<a href="/roi" onclick="document.getElementById('mob-nav').style.display='none'" style="display:block;padding:1rem 0;font-size:15px;color:#5C5849;font-family:system-ui,sans-serif;border-bottom:1px solid rgba(139,105,20,0.1);text-decoration:none">ROI Calculator</a>
+<a href="/blog" onclick="document.getElementById('mob-nav').style.display='none'" style="display:block;padding:1rem 0;font-size:15px;color:#5C5849;font-family:system-ui,sans-serif;border-bottom:1px solid rgba(139,105,20,0.1);text-decoration:none">Blog</a>
+<a href="/resources" onclick="document.getElementById('mob-nav').style.display='none'" style="display:block;padding:1rem 0;font-size:15px;color:#5C5849;font-family:system-ui,sans-serif;border-bottom:1px solid rgba(139,105,20,0.1);text-decoration:none">Resources</a>
+<a href="/#contact" onclick="document.getElementById('mob-nav').style.display='none'" style="display:block;padding:1rem 0;font-size:15px;color:#A07820;font-family:system-ui,sans-serif;text-decoration:none;font-weight:500">Request access</a>
+</div>
 <div id="mob-menu" style="display:none;position:fixed;top:64px;left:0;right:0;background:rgba(250,248,244,0.98);border-bottom:1px solid rgba(139,105,20,0.15);z-index:99;padding:1rem 1.5rem;backdrop-filter:blur(12px)">
 <a href="/#platform" onclick="toggleMenu()" style="display:block;padding:0.75rem 0;font-size:14px;color:#5C5849;font-family:system-ui,sans-serif;border-bottom:1px solid rgba(139,105,20,0.1);text-decoration:none">Platform</a>
 <a href="/#segments" onclick="toggleMenu()" style="display:block;padding:0.75rem 0;font-size:14px;color:#5C5849;font-family:system-ui,sans-serif;border-bottom:1px solid rgba(139,105,20,0.1);text-decoration:none">Who it's for</a>
