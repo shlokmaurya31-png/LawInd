@@ -6,6 +6,10 @@ app = Flask(__name__, static_folder='.')
 def home():
     return send_from_directory('.', 'index.html')
 
+@app.route('/roi')
+def roi():
+    return send_from_directory('.', 'roi.html')
+
 @app.route('/roi/law-firm')
 def roi_firm():
     return send_from_directory('.', 'roi-firm.html')
