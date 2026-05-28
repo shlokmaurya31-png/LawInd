@@ -63,7 +63,7 @@ footer{background:var(--ink);padding:4rem 4rem 2rem}
 .fbot{max-width:1080px;margin:3rem auto 0;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.07);display:flex;justify-content:space-between}
 .fbot span{font-size:11px;color:rgba(255,255,255,0.18);font-family:system-ui,sans-serif}
 .find{font-size:11px;color:rgba(184,146,15,0.6);font-family:system-ui,sans-serif;letter-spacing:0.1em;text-transform:uppercase}
-@media(max-width:768px){nav{padding:1rem 1.5rem}.nav-links{display:none}.hero{grid-template-columns:1fr}.hero-right{height:100vw}.hero-left{padding:3rem 1.5rem}.s{padding:4rem 1.5rem}.fgrid,.tgrid,.seg-grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.sgrid{grid-template-columns:1fr 1fr}.fi2{grid-template-columns:1fr 1fr}.ctab{padding:4rem 1.5rem}footer{padding:3rem 1.5rem 1.5rem}}
+@media(max-width:768px){nav{padding:1rem 1.5rem}.nav-links{display:none}#ham-btn{display:inline-block!important}.hero{grid-template-columns:1fr}.hero-right{height:100vw}.hero-left{padding:3rem 1.5rem}.s{padding:4rem 1.5rem}.fgrid,.tgrid,.seg-grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.sgrid{grid-template-columns:1fr 1fr}.fi2{grid-template-columns:1fr 1fr}.ctab{padding:4rem 1.5rem}footer{padding:3rem 1.5rem 1.5rem}}
 </style></head><body>
 
 <nav>
@@ -71,6 +71,16 @@ footer{background:var(--ink);padding:4rem 4rem 2rem}
   <div class="nav-links"><a href="#platform">Platform</a><a href="#segments">Who it's for</a><a href="#pricing">Pricing</a><a href="#security">Security</a><a href="/roi">ROI Calculator</a><a href="/blog">Blog</a><a href="/resources">Resources</a></div>
   <button class="btn-outline" onclick="window.location.href='#contact'">Request access</button>
 </nav>
+<div id="mob-menu" style="display:none;position:fixed;top:64px;left:0;right:0;background:rgba(250,248,244,0.98);border-bottom:1px solid rgba(139,105,20,0.15);z-index:99;padding:1rem 1.5rem;backdrop-filter:blur(12px)">
+<a href="/#platform" onclick="toggleMenu()" style="display:block;padding:0.75rem 0;font-size:14px;color:#5C5849;font-family:system-ui,sans-serif;border-bottom:1px solid rgba(139,105,20,0.1);text-decoration:none">Platform</a>
+<a href="/#segments" onclick="toggleMenu()" style="display:block;padding:0.75rem 0;font-size:14px;color:#5C5849;font-family:system-ui,sans-serif;border-bottom:1px solid rgba(139,105,20,0.1);text-decoration:none">Who it's for</a>
+<a href="/#pricing" onclick="toggleMenu()" style="display:block;padding:0.75rem 0;font-size:14px;color:#5C5849;font-family:system-ui,sans-serif;border-bottom:1px solid rgba(139,105,20,0.1);text-decoration:none">Pricing</a>
+<a href="/#security" onclick="toggleMenu()" style="display:block;padding:0.75rem 0;font-size:14px;color:#5C5849;font-family:system-ui,sans-serif;border-bottom:1px solid rgba(139,105,20,0.1);text-decoration:none">Security</a>
+<a href="/roi" onclick="toggleMenu()" style="display:block;padding:0.75rem 0;font-size:14px;color:#5C5849;font-family:system-ui,sans-serif;border-bottom:1px solid rgba(139,105,20,0.1);text-decoration:none">ROI Calculator</a>
+<a href="/blog" onclick="toggleMenu()" style="display:block;padding:0.75rem 0;font-size:14px;color:#5C5849;font-family:system-ui,sans-serif;border-bottom:1px solid rgba(139,105,20,0.1);text-decoration:none">Blog</a>
+<a href="/resources" onclick="toggleMenu()" style="display:block;padding:0.75rem 0;font-size:14px;color:#5C5849;font-family:system-ui,sans-serif;text-decoration:none">Resources</a>
+</div>
+<script>function toggleMenu(){var m=document.getElementById("mob-menu");m.style.display=m.style.display==="none"?"block":"none";}</script>
 
 <section class="hero">
   <div class="hero-left">
